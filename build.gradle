@@ -1,5 +1,5 @@
-group = 'com.pstack'
-project.version = '1.1.0'
+group = 'com.parallelstack'
+project.version = '1.2.0'
 
 buildscript {
     repositories {
@@ -39,7 +39,7 @@ android {
             def outputFile = output.outputFile
             if (outputFile != null && outputFile.name.endsWith('.aar')) {
                 def fileName = "${project.name}-${variant.baseName}-${version}.aar"
-                output.outputFileName = new File(outputFile.parent, fileName)
+                output.outputFile = new File(outputFile.parent, fileName)
             }
         }
     }

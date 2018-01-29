@@ -1,10 +1,11 @@
 
-# SuggestSuccess
+# SearchFailureSearchResults
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**suggestResults** | [**SearchSuccessSearchResults**](SearchSuccessSearchResults.md) |  | 
+**error** | **String** |  | 
+**metadata** | **Object** |  | 
 
 
 

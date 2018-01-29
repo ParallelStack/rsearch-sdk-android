@@ -33,7 +33,7 @@ Creates &#x60;doc_id&#x60; in &#x60;doc_type_name&#x60; for &#x60;index_name&#x6
 ### Example
 ```java
 // Import classes:
-//import com.pstack.rsearch.RsearchApi;
+//import com.parallelstack.rsearch.RsearchApi;
 
 RsearchApi apiInstance = new RsearchApi();
 String indexName = "indexName_example"; // String | Name of the index
@@ -82,7 +82,7 @@ Creates specific &#x60;document_type&#x60; in &#x60;index_name&#x60; with specif
 ### Example
 ```java
 // Import classes:
-//import com.pstack.rsearch.RsearchApi;
+//import com.parallelstack.rsearch.RsearchApi;
 
 RsearchApi apiInstance = new RsearchApi();
 String indexName = "indexName_example"; // String | Name of the index
@@ -129,7 +129,7 @@ Creates &#x60;a new index&#x60;.
 ### Example
 ```java
 // Import classes:
-//import com.pstack.rsearch.RsearchApi;
+//import com.parallelstack.rsearch.RsearchApi;
 
 RsearchApi apiInstance = new RsearchApi();
 String indexName = "indexName_example"; // String | Name of the index
@@ -172,7 +172,7 @@ Deletes &#x60;doc_id&#x60; in &#x60;doc_type_name&#x60; for &#x60;index_name&#x6
 ### Example
 ```java
 // Import classes:
-//import com.pstack.rsearch.RsearchApi;
+//import com.parallelstack.rsearch.RsearchApi;
 
 RsearchApi apiInstance = new RsearchApi();
 String indexName = "indexName_example"; // String | Name of the index
@@ -219,7 +219,7 @@ Deletes &#x60;an index&#x60; {index_name}
 ### Example
 ```java
 // Import classes:
-//import com.pstack.rsearch.RsearchApi;
+//import com.parallelstack.rsearch.RsearchApi;
 
 RsearchApi apiInstance = new RsearchApi();
 String indexName = "indexName_example"; // String | Name of the index
@@ -262,7 +262,7 @@ Gets Suggestions from &#x60;doc_type_name&#x60; in &#x60;index_name&#x60; limite
 ### Example
 ```java
 // Import classes:
-//import com.pstack.rsearch.RsearchApi;
+//import com.parallelstack.rsearch.RsearchApi;
 
 RsearchApi apiInstance = new RsearchApi();
 String indexName = "indexName_example"; // String | Name of the index
@@ -309,7 +309,7 @@ Gets Suggestions in &#x60;index_name&#x60; limited by the request body fields
 ### Example
 ```java
 // Import classes:
-//import com.pstack.rsearch.RsearchApi;
+//import com.parallelstack.rsearch.RsearchApi;
 
 RsearchApi apiInstance = new RsearchApi();
 String indexName = "indexName_example"; // String | Name of the index
@@ -354,7 +354,7 @@ Advanced Search which gets all documents in &#x60;index_name&#x60; for provided 
 ### Example
 ```java
 // Import classes:
-//import com.pstack.rsearch.RsearchApi;
+//import com.parallelstack.rsearch.RsearchApi;
 
 RsearchApi apiInstance = new RsearchApi();
 String indexName = "indexName_example"; // String | Name of the index
@@ -401,7 +401,7 @@ Gets &#x60;All document_types&#x60; present in &#x60;index_name&#x60;
 ### Example
 ```java
 // Import classes:
-//import com.pstack.rsearch.RsearchApi;
+//import com.parallelstack.rsearch.RsearchApi;
 
 RsearchApi apiInstance = new RsearchApi();
 String indexName = "indexName_example"; // String | Name of the index
@@ -444,7 +444,7 @@ Fetches all documents in &#x60;doc_type_name&#x60; for &#x60;index_name&#x60;. A
 ### Example
 ```java
 // Import classes:
-//import com.pstack.rsearch.RsearchApi;
+//import com.parallelstack.rsearch.RsearchApi;
 
 RsearchApi apiInstance = new RsearchApi();
 String indexName = "indexName_example"; // String | Name of the index
@@ -489,7 +489,7 @@ Fetches &#x60;All indexes&#x60; that the user has. Not recommended to be used in
 ### Example
 ```java
 // Import classes:
-//import com.pstack.rsearch.RsearchApi;
+//import com.parallelstack.rsearch.RsearchApi;
 
 RsearchApi apiInstance = new RsearchApi();
 try {
@@ -528,7 +528,7 @@ Basic Search which gets all documents in &#x60;index_name&#x60; for provided sea
 ### Example
 ```java
 // Import classes:
-//import com.pstack.rsearch.RsearchApi;
+//import com.parallelstack.rsearch.RsearchApi;
 
 RsearchApi apiInstance = new RsearchApi();
 String indexName = "indexName_example"; // String | Name of the index
@@ -573,7 +573,7 @@ Gets Suggestions from &#x60;doc_type_name&#x60; in &#x60;index_name&#x60;. Pleas
 ### Example
 ```java
 // Import classes:
-//import com.pstack.rsearch.RsearchApi;
+//import com.parallelstack.rsearch.RsearchApi;
 
 RsearchApi apiInstance = new RsearchApi();
 String indexName = "indexName_example"; // String | Name of the index
@@ -620,7 +620,7 @@ Fetches the document referenced by &#x60;doc_id&#x60; in &#x60;doc_type_name&#x6
 ### Example
 ```java
 // Import classes:
-//import com.pstack.rsearch.RsearchApi;
+//import com.parallelstack.rsearch.RsearchApi;
 
 RsearchApi apiInstance = new RsearchApi();
 String indexName = "indexName_example"; // String | Name of the index
@@ -667,7 +667,7 @@ Checks whether &#x60;document_type&#x60; in &#x60;index_name&#x60; exists
 ### Example
 ```java
 // Import classes:
-//import com.pstack.rsearch.RsearchApi;
+//import com.parallelstack.rsearch.RsearchApi;
 
 RsearchApi apiInstance = new RsearchApi();
 String indexName = "indexName_example"; // String | Name of the index
@@ -712,7 +712,7 @@ Checks whether &#x60;a particular index&#x60; {index_name} exists
 ### Example
 ```java
 // Import classes:
-//import com.pstack.rsearch.RsearchApi;
+//import com.parallelstack.rsearch.RsearchApi;
 
 RsearchApi apiInstance = new RsearchApi();
 String indexName = "indexName_example"; // String | Name of the index

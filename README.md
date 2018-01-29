@@ -1,4 +1,4 @@
-# RSearch
+# rsearch
 
 ## Requirements
 
@@ -26,9 +26,9 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-    <groupId>com.pstack</groupId>
-    <artifactId>RSearch</artifactId>
-    <version>1.1.0</version>
+    <groupId>com.parallelstack</groupId>
+    <artifactId>rsearch</artifactId>
+    <version>1.2.0</version>
     <scope>compile</scope>
 </dependency>
 ```
@@ -38,7 +38,7 @@ Add this dependency to your project's POM:
 Add this dependency to your project's build file:
 
 ```groovy
-compile "com.pstack:RSearch:1.1.0"
+compile "com.parallelstack:rsearch:1.2.0"
 ```
 
 ### Others
@@ -49,7 +49,7 @@ At first generate the JAR by executing:
 
 Then manually install the following JARs:
 
-* target/RSearch-1.1.0.jar
+* target/rsearch-1.2.0.jar
 * target/lib/*.jar
 
 ## Getting Started
@@ -58,7 +58,7 @@ Please follow the [installation](#installation) instruction and execute the foll
 
 ```java
 
-import com.pstack.rsearch.RsearchApi;
+import com.parallelstack.rsearch.RsearchApi;
 
 public class RsearchApiExample {
 
@@ -142,13 +142,13 @@ Class | Method | HTTP request | Description
  - [GetIndexesSuccessIndexes](docs/GetIndexesSuccessIndexes.md)
  - [GetIndexesSuccessIndexesMetadata](docs/GetIndexesSuccessIndexesMetadata.md)
  - [SearchFailure](docs/SearchFailure.md)
- - [SearchFailureSuggestResults](docs/SearchFailureSuggestResults.md)
+ - [SearchFailureSearchResults](docs/SearchFailureSearchResults.md)
  - [SearchQuery](docs/SearchQuery.md)
  - [SearchQuerySearch](docs/SearchQuerySearch.md)
  - [SearchQuerySearchAggregations](docs/SearchQuerySearchAggregations.md)
  - [SearchSuccess](docs/SearchSuccess.md)
- - [SearchSuccessSuggestResults](docs/SearchSuccessSuggestResults.md)
- - [SearchSuccessSuggestResultsMetadata](docs/SearchSuccessSuggestResultsMetadata.md)
+ - [SearchSuccessSearchResults](docs/SearchSuccessSearchResults.md)
+ - [SearchSuccessSearchResultsMetadata](docs/SearchSuccessSearchResultsMetadata.md)
  - [SuggestFailure](docs/SuggestFailure.md)
  - [SuggestQuery](docs/SuggestQuery.md)
  - [SuggestQuerySuggest](docs/SuggestQuerySuggest.md)

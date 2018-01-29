@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**suggestResults** | [**SearchSuccessSuggestResults**](SearchSuccessSuggestResults.md) |  |  [optional]
+**searchResults** | [**SearchSuccessSearchResults**](SearchSuccessSearchResults.md) |  | 
 
 
 
