@@ -23,8 +23,8 @@ public class SearchSuccessSearchResultsMetadata {
   private BigDecimal numberSearchResults = null;
   @SerializedName("query")
   private String query = null;
-  @SerializedName("aggregations")
-  private Object aggregations = null;
+  @SerializedName("aggregated")
+  private Object aggregated = null;
 
   /**
    **/
@@ -49,11 +49,11 @@ public class SearchSuccessSearchResultsMetadata {
   /**
    **/
   @ApiModelProperty(value = "")
-  public Object getAggregations() {
-    return aggregations;
+  public Object getAggregated() {
+    return aggregated;
   }
-  public void setAggregations(Object aggregations) {
-    this.aggregations = aggregations;
+  public void setAggregated(Object aggregated) {
+    this.aggregated = aggregated;
   }
 
 
@@ -68,7 +68,7 @@ public class SearchSuccessSearchResultsMetadata {
     SearchSuccessSearchResultsMetadata searchSuccessSearchResultsMetadata = (SearchSuccessSearchResultsMetadata) o;
     return (this.numberSearchResults == null ? searchSuccessSearchResultsMetadata.numberSearchResults == null : this.numberSearchResults.equals(searchSuccessSearchResultsMetadata.numberSearchResults)) &&
         (this.query == null ? searchSuccessSearchResultsMetadata.query == null : this.query.equals(searchSuccessSearchResultsMetadata.query)) &&
-        (this.aggregations == null ? searchSuccessSearchResultsMetadata.aggregations == null : this.aggregations.equals(searchSuccessSearchResultsMetadata.aggregations));
+        (this.aggregated == null ? searchSuccessSearchResultsMetadata.aggregated == null : this.aggregated.equals(searchSuccessSearchResultsMetadata.aggregated));
   }
 
   @Override
@@ -76,7 +76,7 @@ public class SearchSuccessSearchResultsMetadata {
     int result = 17;
     result = 31 * result + (this.numberSearchResults == null ? 0: this.numberSearchResults.hashCode());
     result = 31 * result + (this.query == null ? 0: this.query.hashCode());
-    result = 31 * result + (this.aggregations == null ? 0: this.aggregations.hashCode());
+    result = 31 * result + (this.aggregated == null ? 0: this.aggregated.hashCode());
     return result;
   }
 
@@ -87,7 +87,7 @@ public class SearchSuccessSearchResultsMetadata {
     
     sb.append("  numberSearchResults: ").append(numberSearchResults).append("\n");
     sb.append("  query: ").append(query).append("\n");
-    sb.append("  aggregations: ").append(aggregations).append("\n");
+    sb.append("  aggregated: ").append(aggregated).append("\n");
     sb.append("}\n");
     return sb.toString();
   }

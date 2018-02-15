@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **numberSearchResults** | [**BigDecimal**](BigDecimal.md) |  | 
 **query** | **String** |  | 
-**aggregations** | **Object** |  |  [optional]
+**aggregated** | **Object** |  |  [optional]
 
 
 
