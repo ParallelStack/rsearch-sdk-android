@@ -17,14 +17,12 @@ import io.swagger.annotations.*;
 import com.google.gson.annotations.SerializedName;
 
 @ApiModel(description = "")
-public class SearchSuccessSearchResultsMetadata {
+public class SuggestSuccessSuggestResultsMetadata {
   
   @SerializedName("number_search_results")
   private BigDecimal numberSearchResults = null;
   @SerializedName("query")
   private String query = null;
-  @SerializedName("aggregations")
-  private Object aggregations = null;
 
   /**
    **/
@@ -46,16 +44,6 @@ public class SearchSuccessSearchResultsMetadata {
     this.query = query;
   }
 
-  /**
-   **/
-  @ApiModelProperty(value = "")
-  public Object getAggregations() {
-    return aggregations;
-  }
-  public void setAggregations(Object aggregations) {
-    this.aggregations = aggregations;
-  }
-
 
   @Override
   public boolean equals(Object o) {
@@ -65,10 +53,9 @@ public class SearchSuccessSearchResultsMetadata {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    SearchSuccessSearchResultsMetadata searchSuccessSearchResultsMetadata = (SearchSuccessSearchResultsMetadata) o;
-    return (this.numberSearchResults == null ? searchSuccessSearchResultsMetadata.numberSearchResults == null : this.numberSearchResults.equals(searchSuccessSearchResultsMetadata.numberSearchResults)) &&
-        (this.query == null ? searchSuccessSearchResultsMetadata.query == null : this.query.equals(searchSuccessSearchResultsMetadata.query)) &&
-        (this.aggregations == null ? searchSuccessSearchResultsMetadata.aggregations == null : this.aggregations.equals(searchSuccessSearchResultsMetadata.aggregations));
+    SuggestSuccessSuggestResultsMetadata suggestSuccessSuggestResultsMetadata = (SuggestSuccessSuggestResultsMetadata) o;
+    return (this.numberSearchResults == null ? suggestSuccessSuggestResultsMetadata.numberSearchResults == null : this.numberSearchResults.equals(suggestSuccessSuggestResultsMetadata.numberSearchResults)) &&
+        (this.query == null ? suggestSuccessSuggestResultsMetadata.query == null : this.query.equals(suggestSuccessSuggestResultsMetadata.query));
   }
 
   @Override
@@ -76,18 +63,16 @@ public class SearchSuccessSearchResultsMetadata {
     int result = 17;
     result = 31 * result + (this.numberSearchResults == null ? 0: this.numberSearchResults.hashCode());
     result = 31 * result + (this.query == null ? 0: this.query.hashCode());
-    result = 31 * result + (this.aggregations == null ? 0: this.aggregations.hashCode());
     return result;
   }
 
   @Override
   public String toString()  {
     StringBuilder sb = new StringBuilder();
-    sb.append("class SearchSuccessSearchResultsMetadata {\n");
+    sb.append("class SuggestSuccessSuggestResultsMetadata {\n");
     
     sb.append("  numberSearchResults: ").append(numberSearchResults).append("\n");
     sb.append("  query: ").append(query).append("\n");
-    sb.append("  aggregations: ").append(aggregations).append("\n");
     sb.append("}\n");
     return sb.toString();
   }

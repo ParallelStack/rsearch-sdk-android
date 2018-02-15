@@ -28,7 +28,7 @@ Add this dependency to your project's POM:
 <dependency>
     <groupId>com.parallelstack</groupId>
     <artifactId>rsearch</artifactId>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
     <scope>compile</scope>
 </dependency>
 ```
@@ -38,7 +38,7 @@ Add this dependency to your project's POM:
 Add this dependency to your project's build file:
 
 ```groovy
-compile "com.parallelstack:rsearch:1.2.0"
+compile "com.parallelstack:rsearch:1.2.1"
 ```
 
 ### Others
@@ -49,7 +49,7 @@ At first generate the JAR by executing:
 
 Then manually install the following JARs:
 
-* target/rsearch-1.2.0.jar
+* target/rsearch-1.2.1.jar
 * target/lib/*.jar
 
 ## Getting Started
@@ -95,7 +95,6 @@ Class | Method | HTTP request | Description
 *RsearchApi* | [**getAdvancedIndexSuggestResults**](docs/RsearchApi.md#getAdvancedIndexSuggestResults) | **POST** /indexes/{index_name}/suggest | 
 *RsearchApi* | [**getAdvancedSearchResults**](docs/RsearchApi.md#getAdvancedSearchResults) | **POST** /indexes/{index_name}/document_types/{doc_type_name}/search | 
 *RsearchApi* | [**getAllDocumentTypes**](docs/RsearchApi.md#getAllDocumentTypes) | **GET** /indexes/{index_name}/document_types | 
-*RsearchApi* | [**getAllDocuments**](docs/RsearchApi.md#getAllDocuments) | **GET** /indexes/{index_name}/document_types/{doc_type_name}/documents | 
 *RsearchApi* | [**getAllIndexes**](docs/RsearchApi.md#getAllIndexes) | **GET** /indexes | 
 *RsearchApi* | [**getBasicSearchResults**](docs/RsearchApi.md#getBasicSearchResults) | **GET** /indexes/{index_name}/search | 
 *RsearchApi* | [**getDocTypeSuggestResults**](docs/RsearchApi.md#getDocTypeSuggestResults) | **GET** /indexes/{index_name}/document_types/{doc_type_name}/suggest | 
@@ -130,9 +129,6 @@ Class | Method | HTTP request | Description
  - [GetDocumentFailure](docs/GetDocumentFailure.md)
  - [GetDocumentSuccess](docs/GetDocumentSuccess.md)
  - [GetDocumentSuccessDocument](docs/GetDocumentSuccessDocument.md)
- - [GetDocumentsFailure](docs/GetDocumentsFailure.md)
- - [GetDocumentsSuccess](docs/GetDocumentsSuccess.md)
- - [GetDocumentsSuccessDocuments](docs/GetDocumentsSuccessDocuments.md)
  - [GetIndexFailure](docs/GetIndexFailure.md)
  - [GetIndexSuccess](docs/GetIndexSuccess.md)
  - [GetIndexSuccessIndexes](docs/GetIndexSuccessIndexes.md)
@@ -153,6 +149,8 @@ Class | Method | HTTP request | Description
  - [SuggestQuery](docs/SuggestQuery.md)
  - [SuggestQuerySuggest](docs/SuggestQuerySuggest.md)
  - [SuggestSuccess](docs/SuggestSuccess.md)
+ - [SuggestSuccessSuggestResults](docs/SuggestSuccessSuggestResults.md)
+ - [SuggestSuccessSuggestResultsMetadata](docs/SuggestSuccessSuggestResultsMetadata.md)
 
 
 ## Documentation for Authorization

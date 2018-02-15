@@ -12,34 +12,36 @@
 
 package com.parallelstack.rsearch.model;
 
+import com.parallelstack.rsearch.model.SuggestSuccessSuggestResultsMetadata;
+import java.util.*;
 import io.swagger.annotations.*;
 import com.google.gson.annotations.SerializedName;
 
 @ApiModel(description = "")
-public class SearchFailureSearchResults {
+public class SuggestSuccessSuggestResults {
   
-  @SerializedName("error")
-  private String error = null;
+  @SerializedName("results")
+  private List<Object> results = null;
   @SerializedName("metadata")
-  private Object metadata = null;
+  private SuggestSuccessSuggestResultsMetadata metadata = null;
 
   /**
    **/
   @ApiModelProperty(required = true, value = "")
-  public String getError() {
-    return error;
+  public List<Object> getResults() {
+    return results;
   }
-  public void setError(String error) {
-    this.error = error;
+  public void setResults(List<Object> results) {
+    this.results = results;
   }
 
   /**
    **/
   @ApiModelProperty(required = true, value = "")
-  public Object getMetadata() {
+  public SuggestSuccessSuggestResultsMetadata getMetadata() {
     return metadata;
   }
-  public void setMetadata(Object metadata) {
+  public void setMetadata(SuggestSuccessSuggestResultsMetadata metadata) {
     this.metadata = metadata;
   }
 
@@ -52,15 +54,15 @@ public class SearchFailureSearchResults {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    SearchFailureSearchResults searchFailureSearchResults = (SearchFailureSearchResults) o;
-    return (this.error == null ? searchFailureSearchResults.error == null : this.error.equals(searchFailureSearchResults.error)) &&
-        (this.metadata == null ? searchFailureSearchResults.metadata == null : this.metadata.equals(searchFailureSearchResults.metadata));
+    SuggestSuccessSuggestResults suggestSuccessSuggestResults = (SuggestSuccessSuggestResults) o;
+    return (this.results == null ? suggestSuccessSuggestResults.results == null : this.results.equals(suggestSuccessSuggestResults.results)) &&
+        (this.metadata == null ? suggestSuccessSuggestResults.metadata == null : this.metadata.equals(suggestSuccessSuggestResults.metadata));
   }
 
   @Override
   public int hashCode() {
     int result = 17;
-    result = 31 * result + (this.error == null ? 0: this.error.hashCode());
+    result = 31 * result + (this.results == null ? 0: this.results.hashCode());
     result = 31 * result + (this.metadata == null ? 0: this.metadata.hashCode());
     return result;
   }
@@ -68,9 +70,9 @@ public class SearchFailureSearchResults {
   @Override
   public String toString()  {
     StringBuilder sb = new StringBuilder();
-    sb.append("class SearchFailureSearchResults {\n");
+    sb.append("class SuggestSuccessSuggestResults {\n");
     
-    sb.append("  error: ").append(error).append("\n");
+    sb.append("  results: ").append(results).append("\n");
     sb.append("  metadata: ").append(metadata).append("\n");
     sb.append("}\n");
     return sb.toString();
