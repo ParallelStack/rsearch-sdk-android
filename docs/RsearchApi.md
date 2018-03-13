@@ -11,6 +11,8 @@ Method | HTTP request | Description
 [**deleteIndex**](RsearchApi.md#deleteIndex) | **DELETE** /indexes/{index_name} | 
 [**getAdvancedDocTypeSuggestResults**](RsearchApi.md#getAdvancedDocTypeSuggestResults) | **POST** /indexes/{index_name}/document_types/{doc_type_name}/suggest | 
 [**getAdvancedIndexSuggestResults**](RsearchApi.md#getAdvancedIndexSuggestResults) | **POST** /indexes/{index_name}/suggest | 
+[**getAdvancedMultiIndexSearchResults**](RsearchApi.md#getAdvancedMultiIndexSearchResults) | **POST** /indexes/search | 
+[**getAdvancedMultiIndexSuggestResults**](RsearchApi.md#getAdvancedMultiIndexSuggestResults) | **POST** /indexes/suggest | 
 [**getAdvancedSearchResults**](RsearchApi.md#getAdvancedSearchResults) | **POST** /indexes/{index_name}/document_types/{doc_type_name}/search | 
 [**getAllDocumentTypes**](RsearchApi.md#getAllDocumentTypes) | **GET** /indexes/{index_name}/document_types | 
 [**getAllIndexes**](RsearchApi.md#getAllIndexes) | **GET** /indexes | 
@@ -19,6 +21,7 @@ Method | HTTP request | Description
 [**getDocument**](RsearchApi.md#getDocument) | **GET** /indexes/{index_name}/document_types/{doc_type_name}/documents/{doc_id} | 
 [**getDocumentType**](RsearchApi.md#getDocumentType) | **GET** /indexes/{index_name}/document_types/{doc_type_name} | 
 [**getIndex**](RsearchApi.md#getIndex) | **GET** /indexes/{index_name} | 
+[**getSimilarDocsResults**](RsearchApi.md#getSimilarDocsResults) | **POST** /indexes/algorithms/similardocs | 
 
 
 <a name="addDocument"></a>
@@ -256,7 +259,7 @@ Name | Type | Description  | Notes
 
 
 
-Gets Suggestions from &#x60;doc_type_name&#x60; in &#x60;index_name&#x60; limited by the body params. Please ensure you refer the getting started guides, to get the format of the query right.
+Gets Suggestions from &#x60;doc_type_name&#x60; in &#x60;index_name&#x60; based on body params. Please ensure you refer the getting started guides, to get the format of the query right.
 
 ### Example
 ```java
@@ -328,6 +331,92 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **indexName** | **String**| Name of the index |
  **search** | [**SuggestQuery**](SuggestQuery.md)| Details of the search query |
+
+### Return type
+
+[**SuggestSuccess**](SuggestSuccess.md)
+
+### Authorization
+
+[authToken](../README.md#authToken), [readAppID](../README.md#readAppID)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="getAdvancedMultiIndexSearchResults"></a>
+# **getAdvancedMultiIndexSearchResults**
+> SearchSuccess getAdvancedMultiIndexSearchResults(search)
+
+
+
+Advanced Search across multiple indexes specified as a part of the search criteria. Please ensure you refer the getting started guides, to get the format of the query right.
+
+### Example
+```java
+// Import classes:
+//import com.parallelstack.rsearch.RsearchApi;
+
+RsearchApi apiInstance = new RsearchApi();
+IndexesSearchQuery search = new IndexesSearchQuery(); // IndexesSearchQuery | Details of the search query
+try {
+    SearchSuccess result = apiInstance.getAdvancedMultiIndexSearchResults(search);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling RsearchApi#getAdvancedMultiIndexSearchResults");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **search** | [**IndexesSearchQuery**](IndexesSearchQuery.md)| Details of the search query |
+
+### Return type
+
+[**SearchSuccess**](SearchSuccess.md)
+
+### Authorization
+
+[authToken](../README.md#authToken), [readAppID](../README.md#readAppID)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="getAdvancedMultiIndexSuggestResults"></a>
+# **getAdvancedMultiIndexSuggestResults**
+> SuggestSuccess getAdvancedMultiIndexSuggestResults(suggest)
+
+
+
+Gets Suggestions across multiple indexes. Please ensure you refer the getting started guides, to get the format of the query right.
+
+### Example
+```java
+// Import classes:
+//import com.parallelstack.rsearch.RsearchApi;
+
+RsearchApi apiInstance = new RsearchApi();
+IndexesSuggestQuery suggest = new IndexesSuggestQuery(); // IndexesSuggestQuery | Details of the suggest query
+try {
+    SuggestSuccess result = apiInstance.getAdvancedMultiIndexSuggestResults(suggest);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling RsearchApi#getAdvancedMultiIndexSuggestResults");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **suggest** | [**IndexesSuggestQuery**](IndexesSuggestQuery.md)| Details of the suggest query |
 
 ### Return type
 
@@ -688,6 +777,49 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**GetIndexSuccess**](GetIndexSuccess.md)
+
+### Authorization
+
+[authToken](../README.md#authToken), [readAppID](../README.md#readAppID)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="getSimilarDocsResults"></a>
+# **getSimilarDocsResults**
+> AlgorithmSuccess getSimilarDocsResults(algorithm)
+
+
+
+Returns Similar Documents based on the provided document(s) details. Please ensure you refer the getting started guides, to get the format of the query right.
+
+### Example
+```java
+// Import classes:
+//import com.parallelstack.rsearch.RsearchApi;
+
+RsearchApi apiInstance = new RsearchApi();
+AlgorithmSimilarDocsQuery algorithm = new AlgorithmSimilarDocsQuery(); // AlgorithmSimilarDocsQuery | Query defintions
+try {
+    AlgorithmSuccess result = apiInstance.getSimilarDocsResults(algorithm);
+    System.out.println(result);
+} catch (ApiException e) {
+    System.err.println("Exception when calling RsearchApi#getSimilarDocsResults");
+    e.printStackTrace();
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **algorithm** | [**AlgorithmSimilarDocsQuery**](AlgorithmSimilarDocsQuery.md)| Query defintions |
+
+### Return type
+
+[**AlgorithmSuccess**](AlgorithmSuccess.md)
 
 ### Authorization
 

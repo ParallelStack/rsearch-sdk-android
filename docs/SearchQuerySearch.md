@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **pageNum** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **pageCount** | [**BigDecimal**](BigDecimal.md) |  |  [optional]
 **filters** | **Object** |  |  [optional]
+**sortFields** | **List&lt;Object&gt;** |  |  [optional]
 **aggregations** | [**List&lt;SearchQuerySearchAggregations&gt;**](SearchQuerySearchAggregations.md) |  |  [optional]
 
 

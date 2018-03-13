@@ -28,7 +28,7 @@ Add this dependency to your project's POM:
 <dependency>
     <groupId>com.parallelstack</groupId>
     <artifactId>rsearch</artifactId>
-    <version>1.2.1</version>
+    <version>1.3.0</version>
     <scope>compile</scope>
 </dependency>
 ```
@@ -38,7 +38,7 @@ Add this dependency to your project's POM:
 Add this dependency to your project's build file:
 
 ```groovy
-compile "com.parallelstack:rsearch:1.2.1"
+compile "com.parallelstack:rsearch:1.3.0"
 ```
 
 ### Others
@@ -49,7 +49,7 @@ At first generate the JAR by executing:
 
 Then manually install the following JARs:
 
-* target/rsearch-1.2.1.jar
+* target/rsearch-1.3.0.jar
 * target/lib/*.jar
 
 ## Getting Started
@@ -93,6 +93,8 @@ Class | Method | HTTP request | Description
 *RsearchApi* | [**deleteIndex**](docs/RsearchApi.md#deleteIndex) | **DELETE** /indexes/{index_name} | 
 *RsearchApi* | [**getAdvancedDocTypeSuggestResults**](docs/RsearchApi.md#getAdvancedDocTypeSuggestResults) | **POST** /indexes/{index_name}/document_types/{doc_type_name}/suggest | 
 *RsearchApi* | [**getAdvancedIndexSuggestResults**](docs/RsearchApi.md#getAdvancedIndexSuggestResults) | **POST** /indexes/{index_name}/suggest | 
+*RsearchApi* | [**getAdvancedMultiIndexSearchResults**](docs/RsearchApi.md#getAdvancedMultiIndexSearchResults) | **POST** /indexes/search | 
+*RsearchApi* | [**getAdvancedMultiIndexSuggestResults**](docs/RsearchApi.md#getAdvancedMultiIndexSuggestResults) | **POST** /indexes/suggest | 
 *RsearchApi* | [**getAdvancedSearchResults**](docs/RsearchApi.md#getAdvancedSearchResults) | **POST** /indexes/{index_name}/document_types/{doc_type_name}/search | 
 *RsearchApi* | [**getAllDocumentTypes**](docs/RsearchApi.md#getAllDocumentTypes) | **GET** /indexes/{index_name}/document_types | 
 *RsearchApi* | [**getAllIndexes**](docs/RsearchApi.md#getAllIndexes) | **GET** /indexes | 
@@ -101,10 +103,16 @@ Class | Method | HTTP request | Description
 *RsearchApi* | [**getDocument**](docs/RsearchApi.md#getDocument) | **GET** /indexes/{index_name}/document_types/{doc_type_name}/documents/{doc_id} | 
 *RsearchApi* | [**getDocumentType**](docs/RsearchApi.md#getDocumentType) | **GET** /indexes/{index_name}/document_types/{doc_type_name} | 
 *RsearchApi* | [**getIndex**](docs/RsearchApi.md#getIndex) | **GET** /indexes/{index_name} | 
+*RsearchApi* | [**getSimilarDocsResults**](docs/RsearchApi.md#getSimilarDocsResults) | **POST** /indexes/algorithms/similardocs | 
 
 
 ## Documentation for Models
 
+ - [AlgorithmFailure](docs/AlgorithmFailure.md)
+ - [AlgorithmFailureSearchResults](docs/AlgorithmFailureSearchResults.md)
+ - [AlgorithmSuccess](docs/AlgorithmSuccess.md)
+ - [AlgorithmSuccessAlgorithmResults](docs/AlgorithmSuccessAlgorithmResults.md)
+ - [AlgorithmSuccessAlgorithmResultsMetadata](docs/AlgorithmSuccessAlgorithmResultsMetadata.md)
  - [CreateDocTypeFailure](docs/CreateDocTypeFailure.md)
  - [CreateDocTypeSuccess](docs/CreateDocTypeSuccess.md)
  - [CreateDocumentFailure](docs/CreateDocumentFailure.md)
@@ -137,6 +145,10 @@ Class | Method | HTTP request | Description
  - [GetIndexesSuccess](docs/GetIndexesSuccess.md)
  - [GetIndexesSuccessIndexes](docs/GetIndexesSuccessIndexes.md)
  - [GetIndexesSuccessIndexesMetadata](docs/GetIndexesSuccessIndexesMetadata.md)
+ - [IndexesSearchQuery](docs/IndexesSearchQuery.md)
+ - [IndexesSearchQuerySearch](docs/IndexesSearchQuerySearch.md)
+ - [IndexesSuggestQuery](docs/IndexesSuggestQuery.md)
+ - [IndexesSuggestQuerySuggest](docs/IndexesSuggestQuerySuggest.md)
  - [SearchFailure](docs/SearchFailure.md)
  - [SearchFailureSearchResults](docs/SearchFailureSearchResults.md)
  - [SearchQuery](docs/SearchQuery.md)
@@ -146,6 +158,8 @@ Class | Method | HTTP request | Description
  - [SearchSuccessSearchResults](docs/SearchSuccessSearchResults.md)
  - [SearchSuccessSearchResultsMetadata](docs/SearchSuccessSearchResultsMetadata.md)
  - [SuggestFailure](docs/SuggestFailure.md)
+ - [SuggestFailureSuggestResults](docs/SuggestFailureSuggestResults.md)
+ - [SuggestFailureSuggestResultsMetadata](docs/SuggestFailureSuggestResultsMetadata.md)
  - [SuggestQuery](docs/SuggestQuery.md)
  - [SuggestQuerySuggest](docs/SuggestQuerySuggest.md)
  - [SuggestSuccess](docs/SuggestSuccess.md)
